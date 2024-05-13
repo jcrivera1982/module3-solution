@@ -15,13 +15,24 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
+            background-color: white;
             color: white;
             padding: 10px;
-       
+          }
         .navbar.hidden {
             transform: translateY(-100%);
+            }
+        .menu-button {
+            display: none; 
+            cursor: pointer;
         }
+        .dropdown-menu {
+            display: none;
+        }
+        .show-menu .dropdown-menu {
+            display: block;
+        }
+
     </style>
 </head>
 <body>
@@ -31,8 +42,20 @@
                 
                 <h1 class="text-center">Our Menu</h1>
                 
-                <h2 class="text-center">Chicken</h2
+                <h2 class="text-center">Chicken</h2>
+
+                <div class="menu-button" onclick="toggleMenu()">
+                    &#9776;
+                </div>
                 
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>Chicken</li>
+                        <li>Beef</li>
+                        <li>Sushi</li>
+                    </ul>
+                </div>
+                 
                 <div class="tall-section">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
                     
